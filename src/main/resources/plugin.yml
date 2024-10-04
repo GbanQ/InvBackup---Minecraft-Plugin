@@ -1,0 +1,14 @@
+name: InvBackup
+version: '${project.version}'
+main: org.gbq.invbackup.InvBackup
+api-version: '1.21'
+author: G_Ban_Q
+commands:
+  invbackup:
+    description: "Commands to manage inventory backups."
+    usage: "/invbackup <save|restore|toggleworldcheck|setworld|setinterval|reload>"
+    aliases: ib
+permissions:
+  invbackup.admin:
+    description: "Allows the admin to save and restore player inventories, and toggle world checks."
+    default: op
